@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>dom</title>
+	<style type="text/css">
+		*{
+			margin: 0;
+		}
+		 .box>div{
+		 	width: 100px;
+		 	height: 100px;
+		 	background-color:red;
+		 }
+		 .box div:nth-of-type(2){
+		 	background-color: yellow;
+		 	order:0;
+		 	flex-grow:2;
+		 }
+		 .box div:nth-of-type(3){
+		 	padding: 10px;
+		 	order:-1;
+		 	flex-grow:1;
+		 	background-color:blue;
+		 }
+		 .box>div:last-child{
+
+		 	outline:100px  dotted green;
+		 }
+		 .box{
+		 	width: 800px;
+		 	height: 400px;
+		 	display: flex;
+		 	flex-direction:row;
+		 	flex-wrap:wrap;
+		 	justify-content:space-between;
+		 	align-items: flex-end;
+		 }
+		 .a:hover{
+		 	color:red;
+		 	cursor: pointer;
+		 }
+	</style>
+</head>
+<body>
+ <div class="box">
+ 	<div></div>
+ 	<div></div>
+ 	<div></div>
+ 	<div></div>
+ 	<div class ="a">ferer</div>
+ 	<p class = "a">sdf</p>
+ </div>
+ <span style="cursor:auto">auto</span><br>
+<span style="cursor:crosshair">crosshair</span><br>
+<span style="cursor:default">default</span><br>
+<span style="cursor:e-resize">e-resize</span><br>
+<span style="cursor:help">help</span><br>
+<span style="cursor:move">move</span><br>
+<span style="cursor:n-resize">n-resize</span><br>
+<span style="cursor:ne-resize">ne-resize</span><br>
+<span style="cursor:nw-resize">nw-resize</span><br>
+<span style="cursor:pointer">pointer</span><br>
+<span style="cursor:progress">progress</span><br>
+<span style="cursor:s-resize">s-resize</span><br>
+<span style="cursor:se-resize">se-resize</span><br>
+<span style="cursor:sw-resize">sw-resize</span><br>
+<span style="cursor:text">text</span><br>
+<span style="cursor:w-resize">w-resize</span><br>
+<span style="cursor:wait">wait</span><br>
+ <script type="text/javascript">
+ 	var di = document.getElementsByTagName("div");
+ </script>
+</body>
+</html>
